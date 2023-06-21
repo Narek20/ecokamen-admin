@@ -1,0 +1,10 @@
+.stonePage {
+  width: 100%;
+  display: flex;
+}
+
+@media screen and (max-width: 1200px) {
+  .stonePage {
+    flex-direction: column;
+  }
+}

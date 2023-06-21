@@ -1,0 +1,103 @@
+.login {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  padding: 20px;
+  overflow-x: hidden;
+
+  .content {
+    width: 500px;
+
+    .header {
+      display: flex;
+      width: 100%;
+      padding-right: 20px;
+      border-bottom: 1px solid grey;
+
+      .headerContent {
+        display: flex;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+
+        .title {
+          color: black;
+          font-size: 25px;
+          font-weight: 500;
+          text-align: center;
+        }
+      }
+
+      .iconButton:hover {
+        background-color: transparent;
+      }
+    }
+
+    .inputs {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      width: 100%;
+      justify-content: space-between;
+
+      .input {
+        margin-top: 20px;
+      }
+    }
+
+    .buttons {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+
+      .signUpBtn {
+        color: grey;
+      }
+
+      .haveAnAccount {
+        display: flex;
+        align-items: center;
+
+        .hint {
+          color: gray;
+          font-size: 12px;
+        }
+
+        .signupBtn {
+          color: rgb(6, 2, 249);
+          margin-left: 20px;
+          font-size: 14px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .login {
+    .content {
+      .inputs {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .buttons {
+        flex-direction: column;
+        justify-content: center;
+
+        .signUpBtn {
+          color: grey;
+        }
+
+        .haveAnAccount {
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

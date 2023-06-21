@@ -1,0 +1,30 @@
+.modalComponent {
+  width: 300px;
+  height: 500px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+
+  .images {
+    display: flex;
+    align-items: center;
+
+    .img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .input {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .hint {
+    color: gray;
+    font-size: 11px;
+  }
+}

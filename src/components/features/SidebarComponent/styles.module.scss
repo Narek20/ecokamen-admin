@@ -1,0 +1,30 @@
+.categories {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 3px 10px 1px rgba(213, 211, 211, 0.6);
+  width: 25%;
+  height: fit-content;
+  padding: 10px 0px;
+  background-color: rgba(255, 255, 255, 0.6);
+  margin-left: 10px;
+
+
+  .category {
+    color: black;
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  .category:hover {
+    border-left: 3px solid rgb(255, 128, 0);
+    background-color: white;
+    color: rgb(255, 128, 0);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .categories {
+    display: none;
+
+  }
+}
